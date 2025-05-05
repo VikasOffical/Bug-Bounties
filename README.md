@@ -1,73 +1,110 @@
-# 🐞 Internship Task-3: Bug Bounties
+# **🐞 Bug Bounty Report | Internship Task-3**
 
-## 👨‍💻 Intern Name: Gyanmotay Vikas  
-## 📅 Task Number: 3  
-## 📄 Task Title: Bug Bounties
-
-## **COMPANY: CODETECH IT SOLUTIONS**
-
-## **NAME: GYANMOTAY VIKAS**
-
-## **INTERN ID: CT12RGV**
-
-## **DOMAIN: CYBER SECURITY & ETHICAL HACKING**
-
-## **DURATION: 8 WEEKS**
-
-## **MENTOR: NELLA SANTOSH**
----
-
-## 🔍 1. Introduction
-
-A **bug bounty** is a program that allows ethical hackers to discover and report vulnerabilities in software systems. It enhances software security by identifying bugs before attackers exploit them.
-
-### Platforms Researched:
-- HackerOne
-- Bugcrowd
-- Open Bug Bounty
-- OWASP Projects
+> **🔍 Hunt | 🛡️ Detect | ✍️ Report – A Practical Approach to Web Security Testing Using DVWA, Burp Suite & OWASP ZAP**
 
 ---
 
-## 🛠️ 2. Tools Used
+## **📌 Project Overview**
 
-| Tool | Purpose |
-|------|---------|
-| Burp Suite Community | Manual scanning |
-| OWASP ZAP | Automated scanning |
-| DVWA | Vulnerable web app for testing |
+This project is a **hands-on bug bounty simulation** conducted in a safe, ethical hacking environment using **DVWA** (Damn Vulnerable Web App). It demonstrates the identification of critical web application vulnerabilities like **SQL Injection** and **Cross-Site Scripting (XSS)** using industry-standard tools.
 
 ---
 
-## ⚙️ 3. Steps Taken
+## **🧾 Internship Details**
 
-1. Set up **DVWA** using XAMPP on localhost.
-2. Configured **Burp Suite** to intercept browser traffic.
-3. Scanned DVWA using **Burp Suite** and **ZAP**.
-4. Identified basic vulnerabilities like SQLi and XSS.
-
----
-
-## 🧪 4. Vulnerabilities Found (Demo)
-
-| Type | Description |
-|------|-------------|
-| SQL Injection | `OR 1=1 --` to bypass login |
-| XSS | `<script>alert('XSS')</script>` triggered alert popup |
+- 👨‍💻 **Name:** Gyanmotay Vikas  
+- 🆔 **Intern ID:** CT12RGV  
+- 🏢 **Company:** Codetech IT Solutions  
+- 🌐 **Domain:** Cybersecurity & Ethical Hacking  
+- 📅 **Duration:** 8 Weeks  
+- 🧑‍🏫 **Mentor:** Nella Santosh  
 
 ---
 
-## 📸 5. Screenshots
+## **🛠️ Tools & Environment**
 
-> Screenshots are available in the `screenshots/` folder.
+| **Tool / Platform**  |** Role in Testing **                  |
+|------------------|-------------------------------------------|
+| 💻 DVWA          | Vulnerable web app for practice           |
+| 🧪 Burp Suite    | Manual testing and traffic interception   |
+| ⚙️ OWASP ZAP     | Automated vulnerability scanner           |
+| 🌐 XAMPP         | Localhost server to host DVWA             |
+| 🔎 Browser       | UI interaction and payload injection      |
+
+---
+
+## 🚀 Bugs Discovered
+
+### **✅ SQL Injection**
+
+- **Vector:** `' OR 1=1 --`  
+- **Effect:** Bypasses login, extracts data  
+- **Tool:** Burp Suite (Repeater)  
+- ![SQLi Screenshot](screenshots/sql-injection.png)
 
 ---
 
-## 📚 6. Learnings
+### **✅ Cross-Site Scripting (XSS)**
 
-- Learned how bug bounty platforms work.
-- Understood how to use tools like Burp Suite and ZAP.
-- Practiced detecting SQLi and XSS on test environments.
-- Gained insight into how ethical hackers help secure systems.
+- **Vector:** `<script>alert('XSS')</script>`  
+- **Effect:** JavaScript execution in browser  
+- **Tool:** OWASP ZAP & Burp Suite  
+- ![XSS Screenshot](screenshots/xss-attack.png)
 
 ---
+
+## **🔍 Step-by-Step Methodology**
+
+1. ✅ Set up DVWA on localhost using XAMPP  
+2. ✅ Configure DVWA security level to "Low"  
+3. ✅ Launch Burp Suite → intercept & analyze requests  
+4. ✅ Test forms manually for SQLi and XSS  
+5. ✅ Perform automated scans with OWASP ZAP  
+6. ✅ Document findings and screenshots  
+
+---
+
+## **📚 Key Takeaways**
+
+- 🔐 Gained practical exposure to **bug bounty techniques**  
+- 🛠️ Used real-world tools in a **legal testing environment**  
+- 📄 Learned professional **report writing** and vulnerability documentation  
+- 🌐 Understood the importance of **secure input handling**
+
+---
+
+## **📁 Project Structure**
+
+**Bug-Bounty-Task/
+├── README.md
+├── screenshots/
+│ ├── sql-injection.png
+│ └── xss-attack.png
+├── report/
+│ └── bug_bounty_report.pdf
+└── findings.txt**
+
+---
+
+## ** 📜 Disclaimer**
+
+> This project is for **educational and ethical use only**. All testing was conducted in a legal environment. Never test websites or apps without proper authorization.
+
+---
+
+## **👨‍💻 Author**
+
+**Gyanmotay Vikas**  
+🔗 GitHub: [VikasOfficial](https://github.com/VikasOffical)  
+🔗 LinkedIn: [linkedin.com/in/gyanmotay-vikas-62471126b](https://linkedin.com/in/gyanmotay-vikas-62471126b)
+
+---
+
+## **⭐ Support & Feedback**
+
+If this project helped you learn, please ⭐ star this repository!  
+Feedback, suggestions, or improvements? Open an issue or reach out on [LinkedIn](https://linkedin.com/in/gyanmotay-vikas-62471126b).
+
+---
+
+**> _“Bug bounty hunting is not just finding flaws, it's understanding the system.”_**
