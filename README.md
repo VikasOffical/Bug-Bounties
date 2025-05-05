@@ -1,109 +1,63 @@
-# **🐞 Bug Bounty Report | Internship Task-3**
+# **🛡️ CodeGuard: Python Bug Bounty Scanner**
 
-> **🔍 Hunt | 🛡️ Detect | ✍️ Report – A Practical Approach to Web Security Testing Using DVWA, Burp Suite & OWASP ZAP**
-
----
-
-## **📌 Project Overview**
-
-This project is a **hands-on bug bounty simulation** conducted in a safe, ethical hacking environment using **DVWA** (Damn Vulnerable Web App). It demonstrates the identification of critical web application vulnerabilities like **SQL Injection** and **Cross-Site Scripting (XSS)** using industry-standard tools.
+CodeGuard is an advanced static code analyzer built with Python that scans `.py` files for common security vulnerabilities and bad coding practices. This tool is ideal for bug bounty researchers, developers, and security interns.
 
 ---
 
-## **🧾 Internship Details**
+## **🚀 Features**
 
-- 👨‍💻 **Name:** Gyanmotay Vikas  
-- 🆔 **Intern ID:** CT12RGV  
-- 🏢 **Company:** Codetech IT Solutions  
-- 🌐 **Domain:** Cybersecurity & Ethical Hacking  
-- 📅 **Duration:** 8 Weeks  
-- 🧑‍🏫 **Mentor:** Nella Santosh  
+- 🔍 Detects dangerous functions like `eval()`, `exec()`, `os.system()`, `pickle.loads()`, etc.
+- 📁 Recursively scans directories for Python files
+- 💡 Highlights line numbers and specific security risks
+- 🖥️ Optional HTML report generation for clean, shareable results
 
 ---
 
-## **🛠️ Tools & Environment**
+## **🧪 Sample Vulnerabilities Detected**
 
-| **Tool / Platform**  |**Role in Testing**                  |
-|------------------|-------------------------------------------|
-| 💻 DVWA          | Vulnerable web app for practice           |
-| 🧪 Burp Suite    | Manual testing and traffic interception   |
-| ⚙️ OWASP ZAP     | Automated vulnerability scanner           |
-| 🌐 XAMPP         | Localhost server to host DVWA             |
-| 🔎 Browser       | UI interaction and payload injection      |
+- Use of `eval()` or `exec()` (remote code execution)
+- Unsafe use of `input()` without validation
+- Insecure deserialization with `pickle.loads()`
+- Shell command execution via `os.system()`
 
 ---
 
-## 🚀 Bugs Discovered
+## **🛠️ How to Use**
 
-### **✅ SQL Injection**
+### 1. Clone this repo or copy the script
 
-- **Vector:** `' OR 1=1 --`  
-- **Effect:** Bypasses login, extracts data  
-- **Tool:** Burp Suite (Repeater)  
-- ![SQLi Screenshot](screenshots/sql-injection.png)
+```bash
+git clone https://github.com/your-username/codeguard.git
+cd codeguard
+2. Install Requirements
+bash
+Copy
+Edit
+pip install -r requirements.txt
+3. Run the Scanner
+bash
+Copy
+Edit
+# Scan a directory and generate HTML report
+python codeguard_advanced.py test_code --html
 
----
+# Scan a single file
+python codeguard_advanced.py test_code/vulnerable.py --html
+You’ll find the output in report.html after the scan.
 
-### **✅ Cross-Site Scripting (XSS)**
+## **📂 Project Structure**
+**bash
+Copy
+Edit
+Task-3/
+├── codeguard.py                # Basic scanner (regex-based)
+├── codeguard_advanced.py      # AST-based advanced scanner
+├── test_code/                 # Test files with sample vulnerabilities
+│   └── vulnerable.py
+├── report.html                # Generated HTML report
+├── requirements.txt
+└── README.md**
 
-- **Vector:** `<script>alert('XSS')</script>`  
-- **Effect:** JavaScript execution in browser  
-- **Tool:** OWASP ZAP & Burp Suite  
-- ![XSS Screenshot](screenshots/xss-attack.png)
+## **📄 License**
+This project is for educational and internship purposes only. Feel free to expand it, credit appreciated.
 
----
-
-## **🔍 Step-by-Step Methodology**
-
-1. ✅ Set up DVWA on localhost using XAMPP  
-2. ✅ Configure DVWA security level to "Low"  
-3. ✅ Launch Burp Suite → intercept & analyze requests  
-4. ✅ Test forms manually for SQLi and XSS  
-5. ✅ Perform automated scans with OWASP ZAP  
-6. ✅ Document findings and screenshots  
-
----
-
-## **📚 Key Takeaways**
-
-- 🔐 Gained practical exposure to **bug bounty techniques**  
-- 🛠️ Used real-world tools in a **legal testing environment**  
-- 📄 Learned professional **report writing** and vulnerability documentation  
-- 🌐 Understood the importance of **secure input handling**
-
----
-
-## **📁 Project Structure**
-
-**Bug-Bounty-Task/
-├── README.md
-├── screenshots/
-│ ├── sql-injection.png
-│ └── xss-attack.png
-├── report/
-│ └── bug_bounty_report.pdf
-└── findings.txt**
-
----
-
-##  **📜 Disclaimer**
-
-### > This project is for **educational and ethical use only**. All testing was conducted in a legal environment. Never test websites or apps without proper authorization.
----
-
-## **👨‍💻 Author**
-
-**Gyanmotay Vikas**  
-🔗 GitHub: [VikasOfficial](https://github.com/VikasOffical)  
-🔗 LinkedIn: [linkedin.com/in/gyanmotay-vikas-62471126b](https://linkedin.com/in/gyanmotay-vikas-62471126b)
-
----
-
-## **⭐ Support & Feedback**
-
-If this project helped you learn, please ⭐ star this repository!  
-Feedback, suggestions, or improvements? Open an issue or reach out on [LinkedIn](https://linkedin.com/in/gyanmotay-vikas-62471126b).
-
----
-
-**> _“Bug bounty hunting is not just finding flaws, it's understanding the system.”_**
