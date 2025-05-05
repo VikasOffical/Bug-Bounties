@@ -1,19 +1,7 @@
 # **🛡️ CodeGuard: Python Bug Bounty Scanner**
 
-CodeGuard is an advanced static code analyzer built with Python that scans `.py` files for common security vulnerabilities and bad coding practices. This tool is ideal for bug bounty researchers, developers, and security interns.
+**CodeGuard is an advanced static code analyzer built with Python that scans `.py` files for common security vulnerabilities and bad coding practices. This tool is ideal for bug bounty researchers, developers, and security interns.**
 
----
-**COMPANY: CODETECH IT SOLUTIONS**
-
-**NAME: GYANMOTAY VIKAS**
-
-**INTERN ID: CT12RGV**
-
-**DOMAIN: CYBER SECURITY & ETHICAL HACKING**
-
-**DURATION: 8 WEEKS**
-
-**MENTOR: NELLA SANTOSH**
 
 ---
 ## **🚀 Features**
