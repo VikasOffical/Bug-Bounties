@@ -29,12 +29,12 @@ CodeGuard is an advanced static code analyzer built with Python that scans `.py`
 ```bash
 git clone https://github.com/your-username/codeguard.git
 cd codeguard
-2. Install Requirements
+### 2. Install Requirements
 bash
 Copy
 Edit
 pip install -r requirements.txt
-3. Run the Scanner
+### 3. Run the Scanner
 bash
 Copy
 Edit
@@ -45,7 +45,7 @@ python codeguard_advanced.py test_code --html
 python codeguard_advanced.py test_code/vulnerable.py --html
 You’ll find the output in report.html after the scan.
 
-## **📂 Project Structure**
+## **📂Project Structure**
 **bash
 Copy
 Edit
