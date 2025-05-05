@@ -23,7 +23,7 @@ This project is a **hands-on bug bounty simulation** conducted in a safe, ethica
 
 ## **🛠️ Tools & Environment**
 
-| **Tool / Platform**  |** Role in Testing **                  |
+| **Tool / Platform**  |**Role in Testing**                  |
 |------------------|-------------------------------------------|
 | 💻 DVWA          | Vulnerable web app for practice           |
 | 🧪 Burp Suite    | Manual testing and traffic interception   |
@@ -86,10 +86,9 @@ This project is a **hands-on bug bounty simulation** conducted in a safe, ethica
 
 ---
 
-## ** 📜 Disclaimer**
+##  ** 📜 Disclaimer**
 
-> This project is for **educational and ethical use only**. All testing was conducted in a legal environment. Never test websites or apps without proper authorization.
-
+**> This project is for **educational and ethical use only**. All testing was conducted in a legal environment. Never test websites or apps without proper authorization.**
 ---
 
 ## **👨‍💻 Author**
