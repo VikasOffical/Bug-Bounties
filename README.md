@@ -3,17 +3,18 @@
 CodeGuard is an advanced static code analyzer built with Python that scans `.py` files for common security vulnerabilities and bad coding practices. This tool is ideal for bug bounty researchers, developers, and security interns.
 
 ---
-COMPANY: CODETECH IT SOLUTIONS
+**COMPANY: CODETECH IT SOLUTIONS**
 
-NAME: GYANMOTAY VIKAS
+**NAME: GYANMOTAY VIKAS**
 
-INTERN ID: CT12RGV
+**INTERN ID: CT12RGV**
 
-DOMAIN: CYBER SECURITY & ETHICAL HACKING
+**DOMAIN: CYBER SECURITY & ETHICAL HACKING**
 
-DURATION: 8 WEEKS
+**DURATION: 8 WEEKS**
 
-MENTOR: NELLA SANTOSH
+**MENTOR: NELLA SANTOSH**
+
 ---
 ## **🚀 Features**
 
