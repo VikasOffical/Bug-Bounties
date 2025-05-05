@@ -45,7 +45,7 @@ python codeguard_advanced.py test_code --html
 python codeguard_advanced.py test_code/vulnerable.py --html
 You’ll find the output in report.html after the scan.
 
-## **📂Project Structure**
+## 📂Project Structure
 **bash
 Copy
 Edit
@@ -58,6 +58,6 @@ Task-3/
 ├── requirements.txt
 └── README.md**
 
-## **📄 License**
+## 📄 License
 This project is for educational and internship purposes only. Feel free to expand it, credit appreciated.
 
